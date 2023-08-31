@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  Perfume
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Inter:wght@400;700&family=Jomhuria&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Inter:wght@400;700&family=Jomhuria&family=Lexend+Deca&family=Montserrat:wght@400;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Gabrielle Essence Eau De Parfum
+    <title>Frontend Mentor | Product preview card component</title>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
 
-  $149.99
-  $169.99
+    <div class="container">
+      <div class="image-mobile"><img src="images/image-product-mobile.jpg" alt=""></div>
+      <div class="image-main"><img src="images/image-product-desktop.jpg" alt=""></div>  
 
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="text">
+        <p>Perfume</p>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <div class="paragraph">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
+          CHANEL. 
+        </div>
+        <div class="prices">
+          <h1 class="main-price">$149.99</h1> <span class="old-price">$169.99</span>
+        </div>
+        <div class="button">
+          <button><img src="images/icon-cart.svg" alt=""> Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Perfume 
+    Gabrielle Essence Eau De Parfum 
+    A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
+    CHANEL. 
+    $149.99 
+    $169.99 
+    Add to Cart -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Nour Eldeen Mohamed</a>.
+    </div>
+  </body>
 </html>
